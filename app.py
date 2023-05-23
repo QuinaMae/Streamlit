@@ -6,9 +6,9 @@ import joblib
 # from sklearn.preprocessing import LabelEncoder
 
 # Load the trained model and scaler
-model = joblib.load('models\model.pkl')
-scaler = joblib.load('models\scaler.pkl')
-label_encoders = joblib.load('models/label_encoders.pkl')
+model = joblib.load(f'models\model.pkl')
+scaler = joblib.load(f'models\scaler.pkl')
+label_encoders = joblib.load(f'models/label_encoders.pkl')
 
 # Function to preprocess new data point
 def preprocess_data(new_data):
