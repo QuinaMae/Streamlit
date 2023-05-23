@@ -51,12 +51,12 @@ def main():
     marital_status = st.selectbox("Marital Status", ["Single", "Married", "Divorced"])
     gender = st.selectbox("Gender", ["Male", "Female"])
     education_field = st.selectbox("Education Field", ["Life Sciences", "Medical", "Marketing", "Technical Degree", "Other"])
-    education = st.selectbox("Education (1 'Below College' 2 'College' 3 'Bachelor' 4 'Master' 5 'Doctor')", [1, 2, 3, 4, 5])
+    education = st.selectbox("Education (1-'Below College', 2- 'College',  3- 'Bachelor' 4- 'Master' 5- 'Doctor')", [1, 2, 3, 4, 5])
     num_companies_worked = st.number_input("Number of Companies Worked")
     total_working_years = st.number_input("Total Working Years")
     
     st.subheader("Current Job")
-    distance_from_home = st.number_input("Distance From Home")
+    distance_from_home = st.number_input("Distance From Home (in miles)")
     stock_option_level = st.selectbox("Stock Option Level", [0, 1, 2, 3])
     years_at_company = st.number_input("Years at Company")
     years_in_current_role = st.number_input("Years in Current Role")
@@ -76,13 +76,13 @@ def main():
     training_times_last_year = st.number_input("Training Times Last Year")
 
     st.subheader("Job Wellness")
-    environment_satisfaction = st.selectbox("Environment Satisfaction", [1, 2, 3, 4, 5])
-    job_involvement = st.selectbox("Job Involvement", [1, 2, 3, 4])
-    job_level = st.selectbox("Job Level", [1, 2, 3, 4, 5])
-    job_satisfaction = st.selectbox("Job Satisfaction", [1, 2, 3, 4, 5])
-    performance_rating = st.selectbox("Performance Rating", [1, 2, 3, 4, 5])
-    relationship_satisfaction = st.selectbox("Relationship Satisfaction", [1, 2, 3, 4, 5])
-    work_life_balance = st.selectbox("Work Life Balance", [1, 2, 3, 4, 5])
+    environment_satisfaction = st.selectbox("Environment Satisfaction (1-Very Low, 2-Low, 3-Medium, 4-High, 5-Very High)", [1, 2, 3, 4, 5])
+    job_involvement = st.selectbox("Job Involvement (1-Low, 2-Medium, 3-High, 4-Very High)", [1, 2, 3, 4])
+    job_level = st.selectbox("Job Level (1-Entry, 2-Junior, 3-Mid-lvl, 4-Senior, 5-Executive)" , [1, 2, 3, 4, 5])
+    job_satisfaction = st.selectbox("Job Satisfaction (1-Very Low, 2-Low, 3-Medium, 4-High, 5-Very High)", [1, 2, 3, 4, 5])
+    performance_rating = st.selectbox("Performance Rating (1-Below Expectations, 2-Average, 3-Above Average, 4-Excellent, 5-Outstanding)", [1, 2, 3, 4, 5])
+    relationship_satisfaction = st.selectbox("Relationship Satisfaction (1-Very Low, 2-Low, 3-Medium, 4-High, 5-Very High)", [1, 2, 3, 4, 5])
+    work_life_balance = st.selectbox("Work Life Balance (1-Poor, 2-Fair, 3-Balanced, 4-Good, 5-Excellent)", [1, 2, 3, 4, 5])
     
     
     #Create Predict btn
