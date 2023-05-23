@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
-from sklearn.ensemble import GradientBoostingClassifier
-from sklearn.preprocessing import StandardScaler
+# from sklearn.ensemble import GradientBoostingClassifier
+# from sklearn.preprocessing import StandardScaler
 import joblib
-from sklearn.preprocessing import LabelEncoder
+# from sklearn.preprocessing import LabelEncoder
 
 # Load the trained model and scaler
 model = joblib.load('models\model.pkl')
