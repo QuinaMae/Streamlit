@@ -4,8 +4,8 @@ import joblib
 
 import os
 
-model_path = os.path.join('models', 'model.pkl')
-model = joblib.load(model_path)
+# model_path = os.path.join('models', 'model.pkl')
+# model = joblib.load(model_path)
 
 # Load the trained model and scaler
 model = joblib.load('models/model.pkl')
